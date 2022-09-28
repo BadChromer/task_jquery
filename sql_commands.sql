@@ -2,7 +2,7 @@
 имеют связь по полю EntityID.*/
 
 SELECT * 
-  FROM Table1WHERE 
+  FROM Table1 
   WHERE RequestID NOT IN (SELECT RequestID FROM Table2 WHERE RequestID IS NOT NULL);
 
 /*2. Написать запрос (SELECT), который по заявке № 111 посчитает сумму закупки, по каждому
