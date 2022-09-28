@@ -16,13 +16,3 @@ console.log(elems);
 $(function() {
     $('#PopupDIV').hide().fadeIn(3000);
 })
-
-
-
-// SELECT *
-//  FROM Table1
-//  WHERE RequestID NOT IN (SELECT RequestID FROM Table2 WHERE RequestID IS NOT NULL);
-
-// SELECT CatalogID, (COUNT(CatalogID) * SUM(PositionPrice * PositionQuantity)) AS PurchasePrice FROM table1 WHERE RequestID = 111 GROUP BY CatalogID;
-
-// SELECT CatalogID, (COUNT(CatalogID) * SUM(PositionPrice * PositionQuantity)) AS PurchasePrice FROM table1 WHERE RequestID = 111 AND PositionPrice * PositionQuantity > 100000 GROUP BY CatalogID;
