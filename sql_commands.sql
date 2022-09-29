@@ -7,11 +7,11 @@ SELECT *
 /*Задача №2*/
 
 SELECT CatalogID, SUM(PositionPrice * PositionQuantity) AS PurchasePrice 
-  FROM table1 
+  FROM Table1 
   WHERE RequestID = 111 GROUP BY CatalogID;
 
 /*Задача №3*/
 
 SELECT CatalogID, SUM(PositionPrice * PositionQuantity) AS PurchasePrice 
-  FROM table1 
+  FROM Table1 
   WHERE RequestID = 111 AND PositionPrice * PositionQuantity > 100000 GROUP BY CatalogID;
