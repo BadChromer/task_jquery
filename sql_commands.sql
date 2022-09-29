@@ -6,7 +6,7 @@ SELECT *
 
 /*Задача №2*/
 
-SELECT CatalogID, (COUNT(CatalogID) * SUM(PositionPrice * PositionQuantity)) AS PurchasePrice 
+SELECT CatalogID, SUM(PositionPrice * PositionQuantity) AS PurchasePrice 
   FROM table1 
   WHERE RequestID = 111 GROUP BY CatalogID;
 
